@@ -7,3 +7,8 @@
 .x1iyjqo2 > div > ul > li:nth-child(22) {
   display: none;
 }
+
+/* Remove the Video tab in the top navigation pane */
+ul.xuk3077.x78zum5.x1iyjqo2.xl56j7k.x1p8ty84.x1na7pl.x88anuq > li:nth-child(3) {
+  display: none;
+}
