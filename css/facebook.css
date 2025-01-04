@@ -1,0 +1,9 @@
+/* Remove the Video tab in the left navigation pane on the home page */
+.x1iyjqo2 > div > ul > li:nth-child(6) {
+  display: none;
+}
+
+/* Remove the Reels tab in the left navigation pane on the home page */
+.x1iyjqo2 > div > ul > li:nth-child(22) {
+  display: none;
+}
