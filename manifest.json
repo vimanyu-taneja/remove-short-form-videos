@@ -30,7 +30,8 @@
     },
     {
       "matches": ["https://www.facebook.com/*"],
-      "css": ["css/facebook.css"]
+      "css": ["css/facebook.css"],
+      "js": ["js/facebook.js"]
     }
   ]
 }
