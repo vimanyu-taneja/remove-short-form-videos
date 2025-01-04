@@ -26,6 +26,28 @@ chrome.declarativeNetRequest.updateDynamicRules({
       id: 1,
       action: {
         type: "redirect",
+        redirect: { url: "https://www.instagram.com/" },
+      },
+      condition: {
+        urlFilter: "https://www.instagram.com/reels",
+        resourceTypes: ["main_frame"],
+      },
+    },
+    {
+      id: 2,
+      action: {
+        type: "redirect",
+        redirect: { url: "https://www.instagram.com/" },
+      },
+      condition: {
+        urlFilter: "https://www.instagram.com/explore",
+        resourceTypes: ["main_frame"],
+      },
+    },
+    {
+      id: 3,
+      action: {
+        type: "redirect",
         redirect: { url: "https://www.youtube.com/" },
       },
       condition: {
@@ -34,5 +56,5 @@ chrome.declarativeNetRequest.updateDynamicRules({
       },
     },
   ],
-  removeRuleIds: [1],
+  removeRuleIds: [1, 2, 3],
 });
