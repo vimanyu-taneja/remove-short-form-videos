@@ -51,7 +51,7 @@ chrome.declarativeNetRequest.updateDynamicRules({
         redirect: { url: "https://www.youtube.com/" },
       },
       condition: {
-        urlFilter: "https://www.youtube.com/shorts/",
+        urlFilter: "https://www.youtube.com/shorts",
         resourceTypes: ["main_frame"],
       },
     },
