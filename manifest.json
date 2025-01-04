@@ -10,11 +10,19 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "permissions": ["tabs", "webNavigation", "declarativeNetRequest"],
-  "host_permissions": ["https://www.tiktok.com/*", "https://www.youtube.com/*"],
+  "host_permissions": [
+    "https://www.tiktok.com/*",
+    "https://www.instagram.com/*",
+    "https://www.youtube.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "css": ["css/instagram.css"]
+    },
     {
       "matches": ["https://www.youtube.com/*"],
       "css": ["css/youtube.css"]
