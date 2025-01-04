@@ -1,0 +1,17 @@
+{
+  "name": "Remove All Short-Form Video Content",
+  "description": "Covers TikTok, Instagram (Reels), YouTube (Shorts), and Facebook (Reels)",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["css/youtube.css"]
+    }
+  ]
+}
