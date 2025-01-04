@@ -9,8 +9,8 @@
   },
   "version": "1.0.0",
   "manifest_version": 3,
-  "permissions": ["declarativeNetRequest"],
-  "host_permissions": ["https://www.youtube.com/*"],
+  "permissions": ["tabs", "webNavigation", "declarativeNetRequest"],
+  "host_permissions": ["https://www.tiktok.com/*", "https://www.youtube.com/*"],
   "background": {
     "service_worker": "background.js"
   },
