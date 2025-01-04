@@ -7,6 +7,14 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   ) {
     lastVisitedURL = tab.url;
   }
+
+  const redirectUrl = "https://www.facebook.com/";
+  if (
+    tab.url.startsWith("https://www.facebook.com/watch") ||
+    tab.url.startsWith("https://www.facebook.com/reel/")
+  ) {
+    chrome.tabs.update(tabId, { url: redirectUrl });
+  }
 });
 
 chrome.webNavigation.onBeforeNavigate.addListener(
